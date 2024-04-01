@@ -12,18 +12,38 @@
         background-color: #f8f8f8;
     }
     header {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
+        background-color: #ffffff;
+        color: #000000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    header h1 {
+        margin: 0;
+    }
+    header a {
+        text-decoration: none;
+        color: #000000;
+        margin-left: 20px;
+    }
+    .intro {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2.2em;
+        padding: 20px;
+        text-align: left;
     }
     .container {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 0 20px;
+        max-width: 100%;
+        padding: 75px 5px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
+    }
+    @media (max-width: 768px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
     }
     h1 {
         text-align: center;
@@ -59,26 +79,40 @@
 <body>
     <header>
         <h1>UI/UX Design Portfolio</h1>
+        <div>
+            <a href="#">About</a>
+            <a href="www.linkedin.com/in/agustinjorel">LinkedIn</a>
+        </div>
     </header>
+    <div class="intro">
+        <h3>Hi, I'm Jorel I. Agustin, </h3>
+        <p>A UI and UX designer passionate about creating intuitive and visually appealing interfaces. Welcome to my portfolio, where I showcase my expertise in crafting seamless user experiences that delight and engage. Explore my work and let's bring your digital vision to life!</p>
+    </div>
     <div class="container">
         <div class="work">
             <img src="images/Nicks2BigApp.png" alt="Work 1">
-            <h2>Project Title 1</h2>
+            <h2>Nicks 2Big Ordering Application</h2>
             <p>Description of Project 1</p>
         </div>
         <div class="work">
-            <img src="work2.jpg" alt="Work 2">
-            <h2>Project Title 2</h2>
+            <img src="images/Dish Diary-1.png" alt="Work 2">
+            <h2>Dish Diary Mobile Application</h2>
             <p>Description of Project 2</p>
         </div>
         <div class="work">
-            <img src="work3.jpg" alt="Work 3">
-            <h2>Project Title 3</h2>
+            <img src="images/Arizona Global Campus LMS Redesign-1.png" alt="Work 3">
+            <h2>Arizona Global Campus LMS Redesign</h2>
             <p>Description of Project 3</p>
         </div>
+        <div class="work">
+            <img src="images/Harosky Homes Website Redesign-1.png" alt="Work 4">
+            <h2>Harosky Homes Website Redesign</h2>
+            <p>Description of Project 3</p>
+        </div>
+        <!-- Additional work items here -->
     </div>
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; 2024 Jorel Agustin</p>
     </footer>
 </body>
 </html>
