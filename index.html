@@ -59,12 +59,20 @@
         max-width: 100%;
         border-radius: 5px;
     }
-    .work h2 {
-        margin-top: 0;
-    }
-    .work p {
-        margin-bottom: 0;
-    }
+    .work h2,
+.work p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #000; /* Change the color to match your design */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.work h2:hover,
+.work p:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
     footer {
         background-color: #333;
         color: #fff;
